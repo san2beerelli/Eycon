@@ -16,8 +16,9 @@ class WorkArea extends Component {
         if(textShadow){
             shadow = "0 0.5px 1px rgba(1, 0, 0, 0.3)"
         }
+        
         return (
-            <Paper style={{...workAreaStyle,
+            <Paper id="workAreaEl" style={{...workAreaStyle,
                         borderRadius: `${bgRadius}px`,
                         background: `-webkit-linear-gradient(${bgGradient})`
                         }} zDepth={2}>
