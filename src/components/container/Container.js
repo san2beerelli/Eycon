@@ -17,8 +17,7 @@ const style = {
         flexDirection : 'row',
         alignSelf: 'center',
         flexWrap: 'wrap',
-        height:'calc(100% - 80px)', 
-        overflowY : 'auto'
+        height:'calc(100% - 80px)'
     }
 }
 

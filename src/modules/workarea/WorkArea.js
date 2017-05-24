@@ -18,13 +18,17 @@ class WorkArea extends Component {
         }
         
         return (
-            <Paper id="workAreaEl" style={{...workAreaStyle,
+            <Paper style={{...workAreaStyle,  margin : 20,
                         borderRadius: `${bgRadius}px`,
                         background: `-webkit-linear-gradient(${bgGradient})`
                         }} zDepth={2}>
-                <RFIcon name={selectedIcon} size="5x" gradient={fontGradient}
-                        fontSize={`${fontSize}em`} color="#000000"
-                        textShadow={`${shadow}`} />
+                        <div id="workAreaEl" style={{...workAreaStyle,
+                                    borderRadius: `${bgRadius}px`,
+                                    background: `-webkit-linear-gradient(${bgGradient})` }}>
+                            <RFIcon name={selectedIcon} size="5x" gradient={fontGradient}
+                                    fontSize={`${fontSize}em`} color="#000000"
+                                    textShadow={`${shadow}`} />
+                        </div>
                         
             </Paper>
         )
@@ -35,7 +39,6 @@ const style = {
     workAreaStyle:{
         width : 400,
         height : 400,
-        margin : 20,
         display: 'flex',
         flexDirection : 'column',
         alignItems: 'center',
